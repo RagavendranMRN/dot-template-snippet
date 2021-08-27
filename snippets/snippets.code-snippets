@@ -1,0 +1,49 @@
+{
+    "dotJs Array - Template": {
+        "prefix": ".djs-arr",
+        "body": [
+          "{{~ ${1:array}:${2:iterator_element}}}",
+          "{{=${2:iterator_element}.$3}}",
+          "{{~}}"
+        ],
+        "description": "dotJs Array - Template"
+      },
+
+      "dotJS Select List of Option - Template": {
+        "prefix": ".djs-sel-opt",
+        "body": [
+            "<select>",
+            "{{~ ${1:array}:${2:iterator_element}}}",
+            "<option>{{=${2:iterator_element}.$3}}</option>",
+            "{{~}}",
+            "</select>"
+        ],
+        "description": "dotJS Select List of Option - Template"
+      },
+
+      "dotJs Unordered List - Template": {
+        "prefix": ".djs-ul",
+        "body": [
+          "<ul>",
+          "{{~ ${1:array}:${2:iterator_element}}}",
+          "<li>{{=${2:iterator_element}.$3}}</li>",
+          "{{~}}",
+          "</ul>  "
+        ],
+        "description": "dotJs Unordered List - Template"
+      },
+
+      "dotJs Ordered List - Template": {
+        "prefix": ".djs-ol",
+        "body": [
+          "<ol>",
+          "{{~ ${1:array}:${2:iterator_element}}}",
+          "<li>{{=${2:iterator_element}.$3}}</li>",
+          "{{~}}",
+          "</ol> "
+        ],
+        "description": "dotJs Ordered List - Template"
+      }
+
+
+}
