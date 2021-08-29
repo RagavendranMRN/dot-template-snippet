@@ -59,9 +59,9 @@
     "dotJs If Else - Template": {
         "prefix": ".djs-if-else",
         "body": [
-            "{{? ${1:IF} }}",
-            "\t${TM_SELECTED_TEXT}{2}",
-            "{{?? ${3:Else} }}",
+            "{{? ${1:IF condition Ex: def.count === 0} }}",
+            "\t${TM_SELECTED_TEXT}${2}",
+            "{{?? ${3:Else condition Ex: def.count === 1} }}",
             "\t${4}",
             "{{?}}"
         ],
@@ -70,7 +70,7 @@
     "dotJs If - Template": {
         "prefix": ".djs-if",
         "body": [
-            "{{if( {{${1:Condition}}} ) { }}",
+            "{{if( {{${1:Condition Ex: def.count === 0}}} ) { }}",
             "\t ${TM_SELECTED_TEXT}${2}",
             "{{ } }}",
             ""
@@ -81,7 +81,7 @@
         "prefix": ".djs-fn",
         "body": [
             "{{##def.${1:Function_Name} = function() {",
-            "\t${2:Function_Block}",
+            "\t${2:Javascript - Function_Block}",
             "}",
             "#}}",
             ""
