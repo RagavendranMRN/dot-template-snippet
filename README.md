@@ -26,6 +26,7 @@ This extension contributes the following settings:
 
 * `myExtension.enable`: enable/disable this extension
 * `myExtension.thing`: set to `blah` to do something
+* -fn -> Dot js Function Template
 
 ## Known Issues
 
@@ -63,3 +64,10 @@ Added features X, Y, and Z.
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+
+### Functions
+| Trigger  | Content |
+| -------: | ------- |
+| `-fn`   | function with no params `functionName() {}` |
+| `-fnc`  | function call `functionName()` |
+
